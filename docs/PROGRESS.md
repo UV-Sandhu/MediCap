@@ -16,7 +16,7 @@ Git: agents commit and push only to their own track branch, after the human appr
 | 5 | DB5 | Load the seed data | Done | Loaded database/seed.sql; verified stations count is 5. |
 | 6 | DB6 | Verify every table's row count | Done | Verified all 16 table row counts match expected seed values. |
 | 7 | DB7 | Business-rule queries and constraint tests | Done | Business rules 1-5 validated. CHECK constraints and FK delete restrictions verified. |
-| 8 | DB8 | Reset, refresh dates and back up | Not started | |
+| 8 | DB8 | Reset, refresh dates and back up | Done | Full reset procedure tested and verified. DB6 row counts and Rule 2 verified. |
 | 9 | BE1 | Project init and configuration | Not started | |
 | 10 | BE2 | Database pool, app skeleton, health | Not started | |
 | 11 | BE3 | Errors, validation and helpers | Not started | |
