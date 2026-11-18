@@ -15,7 +15,7 @@ Git: agents commit and push only to their own track branch, after the human appr
 | 4 | DB4 | Verify the structure and the app user | Done | Structure verified: 16 tables, 33 foreign keys, 13 check constraints. medicap_app user verified. |
 | 5 | DB5 | Load the seed data | Done | Loaded database/seed.sql; verified stations count is 5. |
 | 6 | DB6 | Verify every table's row count | Done | Verified all 16 table row counts match expected seed values. |
-| 7 | DB7 | Business-rule queries and constraint tests | Not started | |
+| 7 | DB7 | Business-rule queries and constraint tests | Done | Business rules 1-5 validated. CHECK constraints and FK delete restrictions verified. |
 | 8 | DB8 | Reset, refresh dates and back up | Not started | |
 | 9 | BE1 | Project init and configuration | Not started | |
 | 10 | BE2 | Database pool, app skeleton, health | Not started | |
