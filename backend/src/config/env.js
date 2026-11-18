@@ -25,6 +25,8 @@ export const env = Object.freeze({
   TRUCK_SPEED_KMH: Number(process.env.TRUCK_SPEED_KMH) || 60,
   STOP_DWELL_MIN: Number(process.env.STOP_DWELL_MIN) || 15,
   WEATHER_CACHE_MIN: Number(process.env.WEATHER_CACHE_MIN) || 10,
+  TEMP_LOG_INTERVAL_SEC: Number(process.env.TEMP_LOG_INTERVAL_SEC) || 30,
+  WEATHER_OFFLINE: process.env.WEATHER_OFFLINE === 'true',
   COOLING_OFFSET_C: process.env.COOLING_OFFSET_C !== undefined ? Number(process.env.COOLING_OFFSET_C) : 0,
   AUTO_CONFIRM_RECEIPT: process.env.AUTO_CONFIRM_RECEIPT === 'true',
   CORS_ORIGIN: process.env.CORS_ORIGIN || 'http://localhost:5173'
