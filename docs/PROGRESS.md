@@ -90,7 +90,7 @@ Git: agents commit and push only to their own track branch, after the human appr
 
 | # | Phase | Title | Status | Notes |
 |---|---|---|---|---|
-| 1 | R1 | Geometry helpers | Not started | |
+| 1 | R1 | Geometry helpers | Done | haversineKm, roadKm, interpolate, and round1 implemented and tested. |
 | 2 | R2 | Distance matrix and constants | Not started | |
 | 3 | R3 | Best stop order | Not started | |
 | 4 | R4 | Transfer selection and smart stops | Not started | |
