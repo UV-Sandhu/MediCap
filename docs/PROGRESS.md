@@ -94,7 +94,7 @@ Git: agents commit and push only to their own track branch, after the human appr
 | 2 | R2 | Distance matrix and constants | Done | buildDistanceMatrix, legKm, TRUCK_SPEED_KMH, and STOP_DWELL_MIN added. |
 | 3 | R3 | Best stop order | Done | bestOrder implemented with open path permutation optimization and deterministic tie-breaking. |
 | 4 | R4 | Transfer selection and smart stops | Done | selectTransfers implemented with smart stop candidate loop, detour %, capacity and cold checks. |
-| 5 | R5 | Schedule and ETA | Not started | |
+| 5 | R5 | Schedule and ETA | Done | buildSchedule implemented with dwell times, trip minutes, and accelerated wall-clock ETAs. |
 | 6 | W1 | Open-Meteo client | Not started | |
 | 7 | W2 | Cache, in-flight sharing and offline fallback | Not started | |
 | 8 | S1 | Movement math | Not started | |
