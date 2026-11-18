@@ -91,7 +91,7 @@ Git: agents commit and push only to their own track branch, after the human appr
 | # | Phase | Title | Status | Notes |
 |---|---|---|---|---|
 | 1 | R1 | Geometry helpers | Done | haversineKm, roadKm, interpolate, and round1 implemented and tested. |
-| 2 | R2 | Distance matrix and constants | Not started | |
+| 2 | R2 | Distance matrix and constants | Done | buildDistanceMatrix, legKm, TRUCK_SPEED_KMH, and STOP_DWELL_MIN added. |
 | 3 | R3 | Best stop order | Not started | |
 | 4 | R4 | Transfer selection and smart stops | Not started | |
 | 5 | R5 | Schedule and ETA | Not started | |

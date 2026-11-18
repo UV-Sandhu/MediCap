@@ -22,6 +22,8 @@ export const env = Object.freeze({
   SIM_TICK_MS: Number(process.env.SIM_TICK_MS) || 1000,
   SIM_SPEED: Number(process.env.SIM_SPEED) || 60,
   ROAD_FACTOR: process.env.ROAD_FACTOR !== undefined ? Number(process.env.ROAD_FACTOR) : 1.3,
+  TRUCK_SPEED_KMH: Number(process.env.TRUCK_SPEED_KMH) || 60,
+  STOP_DWELL_MIN: Number(process.env.STOP_DWELL_MIN) || 15,
   WEATHER_CACHE_MIN: Number(process.env.WEATHER_CACHE_MIN) || 10,
   COOLING_OFFSET_C: process.env.COOLING_OFFSET_C !== undefined ? Number(process.env.COOLING_OFFSET_C) : 0,
   AUTO_CONFIRM_RECEIPT: process.env.AUTO_CONFIRM_RECEIPT === 'true',
