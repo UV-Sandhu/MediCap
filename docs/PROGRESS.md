@@ -19,7 +19,7 @@ Git: agents commit and push only to their own track branch, after the human appr
 | 8 | DB8 | Reset, refresh dates and back up | Done | Full reset procedure tested and verified. DB6 row counts and Rule 2 verified. |
 | 9 | BE1 | Project init and configuration | Done | Initialized backend package.json, installed dependencies, configured env.js and .env.example. |
 | 10 | BE2 | Database pool, app skeleton, health | Done | Created db pool, app skeleton, server.js, health endpoint. Verified db up and db down responses. |
-| 11 | BE3 | Errors, validation and helpers | Not started | |
+| 11 | BE3 | Errors, validation and helpers | Done | AppError, toCamel, asyncHandler, respond, validate, notFound, and errorHandler created. 404 test and test/utils.test.js passing. |
 | - | CHECKPOINT | Foundation done: database verified and loaded (DB1 to DB8) and backend skeleton (BE1 to BE3). Human: run npm test in backend/, merge it into master, push, and tell the other two to merge master into their branches. After this, every track can start. | Waiting | |
 
 ## Track 1: Data and API  (pack: backend.md)
