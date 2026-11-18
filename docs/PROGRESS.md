@@ -98,7 +98,7 @@ Git: agents commit and push only to their own track branch, after the human appr
 | 6 | W1 | Open-Meteo client | Done | fetchCurrentTemperature implemented with URLSearchParams and AbortController timeout. Tested live and with mocks. SESSION END |
 | 7 | W2 | Cache, in-flight sharing and offline fallback | Done | getTemperature implemented with 10-min fresh cache, in-flight dedup, stale fallback, and simulatedTemperature offline mode. |
 | 8 | S1 | Movement math | Done | startLeg, advance (immutable), and remainingKm implemented. Zero-length leg and no-mutation tests pass. |
-| 9 | S2 | Truck agent state machine | Not started | |
+| 9 | S2 | Truck agent state machine | Done | TruckAgent with IDLE/LOADING/DRIVING/UNLOADING/RETURNING/MAINTENANCE states. Full A→B→C scenario passes within 1-tick tolerance. |
 | 10 | S3 | Simulation manager and tick loop | Not started | |
 | - | CHECKPOINT | Pure logic done (distance math, stop ordering, schedules, weather client, truck state machine). Human: run npm test; no database needed. Merge. | Waiting | |
 | 11 | W3 | Weather endpoints | Not started | |
