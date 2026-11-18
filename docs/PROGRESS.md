@@ -96,7 +96,7 @@ Git: agents commit and push only to their own track branch, after the human appr
 | 4 | R4 | Transfer selection and smart stops | Done | selectTransfers implemented with smart stop candidate loop, detour %, capacity and cold checks. |
 | 5 | R5 | Schedule and ETA | Done | buildSchedule implemented with dwell times, trip minutes, and accelerated wall-clock ETAs. |
 | 6 | W1 | Open-Meteo client | Done | fetchCurrentTemperature implemented with URLSearchParams and AbortController timeout. Tested live and with mocks. SESSION END |
-| 7 | W2 | Cache, in-flight sharing and offline fallback | Not started | |
+| 7 | W2 | Cache, in-flight sharing and offline fallback | Done | getTemperature implemented with 10-min fresh cache, in-flight dedup, stale fallback, and simulatedTemperature offline mode. |
 | 8 | S1 | Movement math | Not started | |
 | 9 | S2 | Truck agent state machine | Not started | |
 | 10 | S3 | Simulation manager and tick loop | Not started | |
