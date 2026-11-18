@@ -10,7 +10,7 @@ Git: agents commit and push only to their own track branch, after the human appr
 | # | Phase | Title | Status | Notes |
 |---|---|---|---|---|
 | 1 | DB1 | Verify MySQL 8 and the database accounts | Done | MySQL 26.10.0 verified; medicap_dev and medicap_app connectivity confirmed. |
-| 2 | DB2 | Create the project folder and connect | Not started | |
+| 2 | DB2 | Create the project folder and connect | Done | database/schema.sql created and SHOW DATABASES verified. |
 | 3 | DB3 | Create the database and all tables | Not started | |
 | 4 | DB4 | Verify the structure and the app user | Not started | |
 | 5 | DB5 | Load the seed data | Not started | |
