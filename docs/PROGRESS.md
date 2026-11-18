@@ -13,7 +13,7 @@ Git: agents commit and push only to their own track branch, after the human appr
 | 2 | DB2 | Create the project folder and connect | Done | database/schema.sql created and SHOW DATABASES verified. |
 | 3 | DB3 | Create the database and all tables | Done | Created medicap database with all 16 tables. |
 | 4 | DB4 | Verify the structure and the app user | Done | Structure verified: 16 tables, 33 foreign keys, 13 check constraints. medicap_app user verified. |
-| 5 | DB5 | Load the seed data | Not started | |
+| 5 | DB5 | Load the seed data | Done | Loaded database/seed.sql; verified stations count is 5. |
 | 6 | DB6 | Verify every table's row count | Not started | |
 | 7 | DB7 | Business-rule queries and constraint tests | Not started | |
 | 8 | DB8 | Reset, refresh dates and back up | Not started | |
