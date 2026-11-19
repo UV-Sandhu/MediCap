@@ -16,7 +16,8 @@ export function errorHandler(err, req, res, next) {
     status = 400;
     code = 'VALIDATION_ERROR';
     message = 'Validation error';
-    details = err.errors.map((e) => ({
+    const issues = err.issues || err.errors || [];
+    details = issues.map((e) => ({
       field: e.path.join('.'),
       message: e.message
     }));

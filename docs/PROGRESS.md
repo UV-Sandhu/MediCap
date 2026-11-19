@@ -101,7 +101,7 @@ Git: agents commit and push only to their own track branch, after the human appr
 | 9 | S2 | Truck agent state machine | Done | TruckAgent with IDLE/LOADING/DRIVING/UNLOADING/RETURNING/MAINTENANCE states. Full A→B→C scenario passes within 1-tick tolerance. |
 | 10 | S3 | Simulation manager and tick loop | Done | SimulationManager with tick guard, per-agent try/catch, speed control, snapshot, and world.isDockBusy. SIM_PERSIST_EVERY, SIM_AUTOSTART, SIM_MODE added. |
 | - | CHECKPOINT | Pure logic done (distance math, stop ordering, schedules, weather client, truck state machine). Human: run npm test; no database needed. Merge. | Waiting | |
-| 11 | W3 | Weather endpoints | Not started | |
+| 11 | W3 | Weather endpoints | Done | GET /weather/stations and GET /weather/point implemented. BE4 auth stubbed per Doc 14. |
 | 12 | W4 | Temperature logs and manual readings | Not started | |
 | 13 | W5 | Cargo temperature evaluation for shipments | Not started | |
 | 14 | W6 | Weather and temperature tests | Not started | |
