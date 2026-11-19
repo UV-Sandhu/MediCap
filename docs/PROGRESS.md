@@ -103,7 +103,7 @@ Git: agents commit and push only to their own track branch, after the human appr
 | - | CHECKPOINT | Pure logic done (distance math, stop ordering, schedules, weather client, truck state machine). Human: run npm test; no database needed. Merge. | Waiting | |
 | 11 | W3 | Weather endpoints | Done | GET /weather/stations and GET /weather/point implemented. BE4 auth stubbed per Doc 14. |
 | 12 | W4 | Temperature logs and manual readings | Done | recordReading, POST /temperature/readings, and GET /temperature/logs implemented. Alert stub with NULL-safe deduplication added. |
-| 13 | W5 | Cargo temperature evaluation for shipments | Not started | |
+| 13 | W5 | Cargo temperature evaluation for shipments | Done | cargoTemperature, findBreaches, shouldLog, loadCargo, evaluateShipmentReading implemented. Throttled logging and per-batch alert deduplication verified. |
 | 14 | W6 | Weather and temperature tests | Not started | |
 | - | CHECKPOINT | Weather and temperature done (feature F6). Needs Track 1 BE4 and BE13 merged, or stubs (Agent Runbook, section 3). Human: do the F6 checks, merge. | Waiting | |
 | 15 | R6 | Preview endpoint | Not started | |
