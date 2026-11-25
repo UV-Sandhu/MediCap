@@ -27,7 +27,7 @@ Git: agents commit and push only to their own track branch, after the human appr
 | # | Phase | Title | Status | Notes |
 |---|---|---|---|---|
 | 1 | BE4 | Authentication and role guards | Done | Login via email/username, JWT tokens, requireAuth and roles guards implemented and verified. |
-| 2 | BE5 | Stations API | Not started | |
+| 2 | BE5 | Stations API | Done | GET /stations (Active, Inactive, all), POST, PATCH, and soft DELETE with in-use checks implemented and verified. |
 | 3 | BE6 | Users API | Not started | |
 | 4 | BE7 | Foundation tests | Not started | |
 | - | CHECKPOINT | Foundation, login and stations done. Human: run npm test, merge into master (Team Guide, section 6), tell Track 2 that /auth and /stations are live. | Waiting | |
