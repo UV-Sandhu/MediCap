@@ -57,7 +57,7 @@ Git: agents commit and push only to their own track branch, after the human appr
 |---|---|---|---|---|
 | 1 | FA1 | Vite project setup | Done | Scaffolding completed with React, Vite, react-router-dom, leaflet, @fontsource/inter. Folder structure, env files and dev server verified. |
 | 2 | FA2 | Design tokens and global styles | Done | Design tokens declared in tokens.css, global reset and typography in global.css, Inter font imported in main.jsx. Swatch test passed. |
-| 3 | FA3 | API client and mock mode | Not started | |
+| 3 | FA3 | API client and mock mode | Done | Api client with ApiError, localStorage token management, download, mock router with fixtures (auth, stations) and handlers (auth, stations, health) created and verified. |
 | 4 | FA4 | Auth context and protected routes | Not started | |
 | 5 | FA5 | Login page | Not started | |
 | 6 | FA6 | App layout and sidebar | Not started | |
