@@ -1,0 +1,91 @@
+:root {
+  /* Core brand & UI colors */
+  --color-sidebar: #0B3A4A;
+  --color-sidebar-active: rgba(255, 255, 255, 0.10);
+  --color-primary: #0F766E;
+  --color-primary-hover: #0D655E;
+  --color-accent: #14B8A6;
+  --color-bg: #F4F7FA;
+  --color-surface: #FFFFFF;
+  --color-border: #E2E8F0;
+  --color-text: #0F172A;
+  --color-text-muted: #64748B;
+  --color-text-faint: #94A3B8;
+  --color-warn-number: #C2410C;
+  --color-outbound: #7C3AED;
+  --color-inbound: #0E7490;
+  --color-live-bg: #DCFCE7;
+  --color-live-text: #166534;
+  --color-live-dot: #16A34A;
+
+  /* Transfer & Shipment Status Pill colors */
+  --status-requested-bg: #E2E8F0;
+  --status-requested-text: #475569;
+  --status-approved-bg: #DBEAFE;
+  --status-approved-text: #1D4ED8;
+  --status-dispatched-bg: #E0E7FF;
+  --status-dispatched-text: #3730A3;
+  --status-intransit-bg: #CCFBF1;
+  --status-intransit-text: #0F766E;
+  --status-received-bg: #DCFCE7;
+  --status-received-text: #166534;
+  --status-cancelled-bg: #F1F5F9;
+  --status-cancelled-text: #64748B;
+
+  /* Stock Status colors */
+  --status-ok-bg: #DCFCE7;
+  --status-ok-text: #166534;
+  --status-low-bg: #FEF3C7;
+  --status-low-text: #B45309;
+  --status-nearexpiry-bg: #FDEFE3;
+  --status-nearexpiry-text: #EA580C;
+  --status-expired-bg: #FDECEC;
+  --status-expired-text: #DC2626;
+  --status-quarantined-bg: #F3E8FF;
+  --status-quarantined-text: #7E22CE;
+  --status-damaged-bg: #FEE2E2;
+  --status-damaged-text: #991B1B;
+
+  /* Alert Card colors */
+  --alert-critical-bg: #FDECEC;
+  --alert-critical-bar: #DC2626;
+  --alert-warning-bg: #FEF6DC;
+  --alert-warning-bar: #F59E0B;
+  --alert-nearexpiry-bg: #FDEFE3;
+  --alert-nearexpiry-bar: #EA580C;
+  --alert-info-bg: #E0F2FE;
+  --alert-info-bar: #0284C7;
+
+  /* Spacing */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-7: 28px;
+  --space-8: 32px;
+
+  /* Radii */
+  --radius-card: 12px;
+  --radius-control: 8px;
+  --radius-pill: 999px;
+
+  /* Shadows */
+  --shadow-soft: 0 1px 2px rgba(15, 23, 42, 0.04);
+  --shadow-login: 0 8px 24px rgba(15, 23, 42, 0.08);
+
+  /* Layout */
+  --sidebar-width: 205px;
+  --page-padding: 28px;
+
+  /* Typography / Font Sizes */
+  --font-size-xs: 12px;
+  --font-size-sm: 13px;
+  --font-size-base: 14px;
+  --font-size-md: 16px;
+  --font-size-lg: 18px;
+  --font-size-xl: 28px;
+  --font-size-2xl: 32px;
+  --font-size-3xl: 40px;
+}
