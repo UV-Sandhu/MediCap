@@ -1,77 +1,46 @@
-import { useState } from 'react';
-import { api, getToken, clearToken } from './api/client.js';
+import { Routes, Route, Navigate } from 'react-router-dom';
+import { AuthProvider } from './context/AuthContext.jsx';
+import ProtectedRoute from './components/layout/ProtectedRoute.jsx';
+
+import LoginPage from './pages/LoginPage.jsx';
+import DashboardPage from './pages/DashboardPage.jsx';
+import InventoryPage from './pages/InventoryPage.jsx';
+import TransfersPage from './pages/TransfersPage.jsx';
+import NewTransferPage from './pages/NewTransferPage.jsx';
+import TransferDetailPage from './pages/TransferDetailPage.jsx';
+import AlertsPage from './pages/AlertsPage.jsx';
+import SimulationPage from './pages/SimulationPage.jsx';
+import ReportsPage from './pages/ReportsPage.jsx';
+import UsersPage from './pages/UsersPage.jsx';
+import NotFoundPage from './pages/NotFoundPage.jsx';
 
 export default function App() {
-  const [token, setTokenState] = useState(getToken());
-  const [stations, setStations] = useState([]);
-  const [error, setError] = useState(null);
-  const [health, setHealth] = useState(null);
-
-  const handleLogin = async () => {
-    try {
-      setError(null);
-      const res = await api.post('/auth/login', {
-        identifier: 'admin@medicap.local',
-        password: 'Password@123',
-      });
-      setTokenState(res.token);
-    } catch (err) {
-      setError(err.code || err.message);
-    }
-  };
-
-  const handleWrongPassword = async () => {
-    try {
-      setError(null);
-      await api.post('/auth/login', {
-        identifier: 'admin@medicap.local',
-        password: 'wrong',
-      });
-    } catch (err) {
-      setError(err.code || err.message);
-    }
-  };
-
-  const handleGetStations = async () => {
-    try {
-      setError(null);
-      const data = await api.get('/stations');
-      console.log('GET /stations:', data);
-      setStations(data);
-    } catch (err) {
-      setError(err.code || err.message);
-    }
-  };
-
-  const handleHealth = async () => {
-    try {
-      setError(null);
-      const data = await api.get('/health');
-      setHealth(data);
-    } catch (err) {
-      setError(err.code || err.message);
-    }
-  };
-
   return (
-    <div style={{ padding: '28px' }}>
-      <h1>MediCap</h1>
-      <p className="mc-muted">Phase FA3 Verification</p>
+    <AuthProvider>
+      <Routes>
+        <Route path="/login" element={<LoginPage />} />
 
-      <div className="mc-row" style={{ marginTop: '20px' }}>
-        <button id="btn-login" onClick={handleLogin}>Log in as admin</button>
-        <button id="btn-wrong" onClick={handleWrongPassword}>Log in with wrong password</button>
-        <button id="btn-stations" onClick={handleGetStations}>GET /stations</button>
-        <button id="btn-health" onClick={handleHealth}>GET /health</button>
-        <button id="btn-clear" onClick={() => { clearToken(); setTokenState(null); }}>Clear token</button>
-      </div>
+        {/* Protected routes */}
+        <Route element={<ProtectedRoute />}>
+          <Route path="/" element={<Navigate to="/dashboard" replace />} />
+          <Route path="/dashboard" element={<DashboardPage />} />
+          <Route path="/inventory" element={<InventoryPage />} />
+          <Route path="/transfers" element={<TransfersPage />} />
+          <Route path="/transfers/new" element={<NewTransferPage />} />
+          <Route path="/transfers/:id" element={<TransferDetailPage />} />
+          <Route path="/alerts" element={<AlertsPage />} />
+          <Route path="/simulation" element={<SimulationPage />} />
+          <Route path="/reports" element={<ReportsPage />} />
+        </Route>
 
-      <div style={{ marginTop: '20px' }}>
-        <p><strong>Stored Token:</strong> <span id="token-val">{token || 'none'}</span></p>
-        <p><strong>Error Code:</strong> <span id="error-val">{error || 'none'}</span></p>
-        <p><strong>Stations Count:</strong> <span id="stations-count">{stations.length}</span></p>
-        {health && <p><strong>Health DB:</strong> <span id="health-db">{health.db}</span></p>}
-      </div>
-    </div>
+        {/* Admin only route */}
+        <Route element={<ProtectedRoute roles={['Admin']} />}>
+          <Route path="/users" element={<UsersPage />} />
+        </Route>
+
+        {/* Catch-all 404 */}
+        <Route path="*" element={<NotFoundPage />} />
+      </Routes>
+    </AuthProvider>
   );
 }
