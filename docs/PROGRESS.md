@@ -26,7 +26,7 @@ Git: agents commit and push only to their own track branch, after the human appr
 
 | # | Phase | Title | Status | Notes |
 |---|---|---|---|---|
-| 1 | BE4 | Authentication and role guards | Not started | |
+| 1 | BE4 | Authentication and role guards | Done | Login via email/username, JWT tokens, requireAuth and roles guards implemented and verified. |
 | 2 | BE5 | Stations API | Not started | |
 | 3 | BE6 | Users API | Not started | |
 | 4 | BE7 | Foundation tests | Not started | |
