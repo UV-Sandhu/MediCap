@@ -3,11 +3,13 @@ import { findUserById } from './fixtures/auth.js';
 import { authHandlers } from './handlers/auth.js';
 import { stationHandlers } from './handlers/stations.js';
 import { healthHandlers } from './handlers/health.js';
+import { alertHandlers } from './handlers/alerts.js';
 
 const handlers = [
   ...authHandlers,
   ...stationHandlers,
   ...healthHandlers,
+  ...alertHandlers,
 ];
 
 export function registerHandlers(newHandlers) {

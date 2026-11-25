@@ -1,12 +1,15 @@
 import { useAuth } from '../context/AuthContext.jsx';
+import PageHeader from '../components/layout/PageHeader.jsx';
 
 export default function DashboardPage() {
-  const { user, logout } = useAuth();
+  const { user } = useAuth();
   return (
-    <div style={{ padding: '28px' }}>
-      <h1>Dashboard</h1>
-      <p className="mc-muted">Logged in as {user?.fullName} ({user?.role})</p>
-      <button onClick={logout} style={{ marginTop: '16px' }}>Log out</button>
+    <div>
+      <PageHeader
+        title="Dashboard"
+        subtitle={`Master control view · ${user?.role === 'Admin' ? 'All stations' : user?.stationName || ''}`}
+      />
+      <p className="mc-muted">Welcome, {user?.fullName}</p>
     </div>
   );
 }

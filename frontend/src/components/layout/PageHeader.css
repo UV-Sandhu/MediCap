@@ -1,0 +1,32 @@
+.mc-page-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 24px;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.mc-page-header-text {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.mc-page-header-title {
+  font-size: var(--font-size-xl);
+  font-weight: 700;
+  color: var(--color-text);
+  line-height: 1.25;
+}
+
+.mc-page-header-subtitle {
+  font-size: var(--font-size-base);
+  color: var(--color-text-muted);
+}
+
+.mc-page-header-right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
