@@ -55,7 +55,7 @@ Git: agents commit and push only to their own track branch, after the human appr
 
 | # | Phase | Title | Status | Notes |
 |---|---|---|---|---|
-| 1 | FA1 | Vite project setup | Not started | |
+| 1 | FA1 | Vite project setup | Done | Scaffolding completed with React, Vite, react-router-dom, leaflet, @fontsource/inter. Folder structure, env files and dev server verified. |
 | 2 | FA2 | Design tokens and global styles | Not started | |
 | 3 | FA3 | API client and mock mode | Not started | |
 | 4 | FA4 | Auth context and protected routes | Not started | |
